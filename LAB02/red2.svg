@@ -1,0 +1,36 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse ry="26" rx="26" id="svg_2" cy="151.5" cx="67.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="26" rx="26" id="svg_3" cy="231.5" cx="67.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="26" rx="26" id="svg_4" cy="298.5" cx="67.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="26" rx="26" id="svg_5" cy="81.5" cx="283" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="26" rx="26" id="svg_6" cy="231.5" cx="282.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <ellipse ry="26" rx="26" id="svg_7" cy="231.5" cx="502.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_8" y2="261.5" x2="171.5" y1="203.5" x1="171.5" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_10" y2="261.5" x2="409.5" y1="203.5" x1="409.5" fill-opacity="null" stroke-opacity="null" stroke-width="4" stroke="#000" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="217.5" x2="171.5" y1="158.5" x1="94.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="233.5" x2="171.5" y1="233.5" x1="92.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_14" y2="248.5" x2="170.5" y1="295.5" x1="93.499998" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="83.499995" x2="256.5" y1="212.500007" x1="174.500003" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_16" y2="232.5" x2="246.5" y1="232.5" x1="171.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_17" y2="231.5" x2="408.500002" y1="230.5" x1="309.499999" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_18" y2="231.5" x2="476.5" y1="231.5" x1="409.500002" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_19" y2="215.50001" x2="408.499997" y1="81.500005" x1="309.500002" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" fill="none"/>
+  <path transform="rotate(126 163.23249816894528,210.88565063476568) " stroke="#0f0f00" id="svg_20" d="m155.232505,219.885655l7.999993,-18.00001l7.999993,18.00001l-15.999986,0z" stroke-width="1.5" fill="#000000"/>
+  <path transform="rotate(90 163.26748657226565,233.58062744140625) " id="svg_21" d="m155.767494,242.58062l7.499993,-18l7.499993,18l-14.999985,0z" stroke-width="1.5" fill="#000"/>
+  <path transform="rotate(58 163.26251220703136,253.79063415527338) " id="svg_22" d="m154.762505,263.290635l8.499993,-19l8.499993,19l-16.999985,0z" stroke-width="1.5" fill="#000"/>
+  <path transform="rotate(-142 178.13250732421875,207.75563049316403) " id="svg_23" d="m169.6325,216.755637l8.500001,-18.000013l8.500001,18.000013l-17.000001,0z" stroke-width="1.5" fill="#000"/>
+  <path transform="rotate(-37 315.1725463867187,88.89562225341797) " id="svg_24" d="m306.172532,99.395626l9,-21.000001l9,21.000001l-18,0z" stroke-width="1.5" fill="#000"/>
+  <path transform="rotate(91 246.34748840332028,232.4106140136719) " id="svg_25" d="m237.347496,242.410608l9,-19.999987l9,19.999987l-18,0z" stroke-width="1.5" fill="#000"/>
+  <path transform="rotate(89 400.3475036621094,232.41061401367185) " id="svg_26" d="m391.3475,242.41061l9,-19.99999l9,19.99999l-18,0z" stroke-width="1.5" fill="#000"/>
+ </g>
+</svg>
