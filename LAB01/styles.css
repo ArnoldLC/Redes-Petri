@@ -152,3 +152,9 @@ footer p{
 .token-off {
     display: none;
 }
+
+/* Message para máquina de conservas */
+
+.hiddenMessage { 
+    display: none;
+}

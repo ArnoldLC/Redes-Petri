@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../LAB01/styles.css">
+    <title>Red de Petri - Máquina</title>
+</head>
+<body>
+    <h1>Simulación de Redes Petri</h1>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="../Red-por-pasos/index.html">Por pasos</a>
+            </li>
+            <li>
+                <a class="active" href="../Red-automatica/index.html">Automática</a>
+            </li>
+        </ul>
+        <div>
+            <label for="conservante">Conservante</label>
+            <input type="text" id="conservante">
+            <label for="esparrago">Espárrago</label>
+            <input type="text" id="esparrago">
+            <label for="frasco">Frasco</label>
+            <input type="text" id="frasco">
+            <div id="message" class="hiddenMessage">Ya no es posible generar más productos</div>
+        </div>
+        <div class="container">
+            <div class="main-container">
+                <svg width="600" height="350">
+                        <title>Layer 1</title>
+                        <ellipse ry="28" rx="28" id="svg_5" cy="142.5" cx="63.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000"
+                            fill="#fff" />
+                        <ellipse ry="28" rx="28" id="svg_7" cy="222.5" cx="63.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000"
+                            fill="#fff" />
+                        <ellipse ry="28" rx="28" id="svg_8" cy="296.5" cx="63.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000"
+                            fill="#fff" />
+                        <ellipse ry="28" rx="28" id="svg_9" cy="72.5" cx="293.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000"
+                            fill="#fff" />
+                        <ellipse ry="28" rx="28" id="svg_10" cy="222.5" cx="293.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000"
+                            fill="#fff" />
+                        <ellipse ry="28" rx="28" id="svg_11" cy="222.5" cx="523.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000"
+                            fill="#fff" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="255.5" x2="175.5" y1="190.5" x1="176.5" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="4.5" stroke="#000" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_13" y2="206.5" x2="175.5" y1="151.5" x1="89.5" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_14" y2="222.5" x2="175.5" y1="220.5" x1="91.5" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_15" y2="242.5" x2="173.5" y1="294.5" x1="91.5" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none" />
+                        <path transform="rotate(128 167.74249267578125,202.795639038086) " id="svg_16" d="m159.7425,212.795645l7.999993,-20.000013l7.999993,20.000013l-15.999986,0z"
+                            stroke-width="1.5" fill="#000" />
+                        <path transform="rotate(91 165.74249267578128,221.7956237792969) " id="svg_17" d="m157.7425,231.79564l7.99999,-20.00001l8,20.00001l-15.99999,0z"
+                            stroke-width="1.5" fill="#000" />
+                        <path transform="rotate(63 165.74249267578125,246.7956237792969) " id="svg_18" d="m157.7425,256.79564l7.99999,-20.00001l8,20.00001l-15.99999,0z"
+                            stroke-width="1.5" fill="#000" />
+                        <line stroke="#0f0f00" stroke-linecap="null" stroke-linejoin="null" id="svg_19" y2="222.5" x2="263.5" y1="223.5" x1="175.5"
+                            stroke-width="1.5" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="255.5" x2="415.5" y1="190.5" x1="416.5" fill-opacity="null"
+                            stroke-opacity="null" stroke-width="4.5" stroke="#000" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="221.5" x2="416.5" y1="221.5" x1="321.5" stroke-width="1.5"
+                            stroke="#0f0f00" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_22" y2="221.5" x2="416.5" y1="221.5" x1="495.5" stroke-width="1.5"
+                            stroke="#0f0f00" fill="none" />
+                        <line stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="202.5" x2="414.5" y1="80.5" x1="320.5" stroke-width="1.5"
+                            stroke="#0f0f00" fill="none" />
+                        <line stroke="#0f0f00" stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="204.5" x2="176.5" y1="82.499994" x1="265.499999"
+                            stroke-width="1.5" fill="none" />
+                        <path transform="rotate(92 256.29248046875,222.6456146240234) " id="svg_25" d="m249.292504,231.645608l6.999992,-17.999986l6.999992,17.999986l-13.999985,0z"
+                            stroke-width="1.5" fill="#0f0f00" />
+                        <path transform="rotate(92 406.1324768066406,221.67561340332028) " id="svg_26" d="m396.632492,231.675606l9.499985,-19.999986l9.499985,19.999986l-18.99997,0z"
+                            stroke-width="1.5" fill="#0f0f00" />
+                        <path transform="rotate(-38 325.8424987792969,88.890625) " id="svg_27" d="m317.342513,100.390625l8.499987,-23l8.499987,23l-16.999973,0z"
+                            stroke-width="1.5" fill="#0f0f00" />
+                        <path transform="rotate(-149 183.62249755859378,194.9806213378906) " id="svg_28" d="m174.622503,205.980624l9,-21.999999l9,21.999999l-18,0z"
+                            stroke-width="1.5" fill="#0f0f00" />
+                        <ellipse stroke="null" ry="9.5" rx="9.5" id="svg_29" class="token-on" cy="142.5" cx="63.5" stroke-width="1.5" fill="#0f0f00" />
+                        <ellipse stroke="null" ry="9.5" rx="9.5" id="svg_30" class="token-on" cy="222.5" cx="63.5" stroke-width="1.5" fill="#0f0f00" />
+                        <ellipse stroke="null" ry="9.5" rx="9.5" id="svg_31" class="token-on" cy="296.5" cx="63.5" stroke-width="1.5" fill="#0f0f00" />
+                        <ellipse stroke="null" ry="9.5" rx="9.5" id="svg_32" class="token-on" cy="72.5" cx="293.5" stroke-width="1.5" fill="#0f0f00" />
+                        <ellipse stroke="null" ry="9.5" rx="9.5" id="svg_33" class="token-off" cy="222.5" cx="293.5" stroke-width="1.5" fill="#0f0f00" />
+                        <ellipse stroke="null" ry="9.5" rx="9.5" id="svg_34" class="token-off"cy="222.5" cx="524" stroke-width="1.5" fill="#0f0f00" />
+                        <text stroke="null" transform="matrix(0.6524100303649901,0,0,0.6524100303649901,121.93822738528249,43.877802573144436) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_33" y="119.715514"
+                            x="215.642502" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Máquina</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_35" y="157.205234"
+                            x="112.323691" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">1</text>
+                        <text stroke="null" transform="matrix(0.8518518805503845,0,0,0.8518518805503845,16.814811557531357,30.888882905244827) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_36" y="211.717391"
+                            x="113.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">4</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,40.39344495534897) " xml:space="preserve"
+                            text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_37" y="268.028926" x="113.5"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">1</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_38" y="100"
+                            x="0" fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Conservante</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_39" y="195" x="10"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Espárrago</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_40" y="285" x="25"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Frasco</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_41" y="300" x="150"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Elaborar</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_42" y="320" x="150"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">producto</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_43" y="300" x="285"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Producto</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_44" y="300" x="440"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Enviar</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_45" y="320" x="430"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">producto</text>
+                        <text stroke="null" transform="matrix(0.8501170873641968,0,0,0.8501170873641968,17.011710584163666,23.606558740139008) "
+                            xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="20" id="svg_46" y="300" x="560"
+                            fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">Almacén</text>
+                </svg>
+            </div>
+            <div class="options">
+                <div class="btn_">
+                    <button id="btn">Iniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Modelamiento con Redes Petri &copy 2017</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
