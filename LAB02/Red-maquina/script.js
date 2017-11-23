@@ -9,6 +9,7 @@ const consInput = document.getElementById("conservante");
 const espInput = document.getElementById("esparrago");
 const frascInput = document.getElementById("frasco");
 const message = document.getElementById("message");
+const cantProductos = document.getElementById("cant-productos");
 
 var conservante;
 var esparrago;
@@ -22,6 +23,9 @@ btn.addEventListener("click", () => {
     conservante = consInput.value;
     esparrago = espInput.value;
     frasco = frascInput.value;
+    consInput.setAttribute("disabled", true);
+    espInput.setAttribute("disabled", true);
+    frascInput.setAttribute("disabled", true);
     setToken(i);
 
 });
@@ -68,6 +72,7 @@ function setToken(i) {
         console.log("Conservante: " + conservante + 
                     "\nEspárrago: " + esparrago +
                     "\nFrasco: " + frasco + "\n");
+        cantProductos.innerHTML = almacen;
     }
     var loop = setTimeout(setToken, 2000, i);
 }
