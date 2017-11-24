@@ -18,20 +18,28 @@
                 <a href="../../LAB01/Red-automatica/index.html">Automática</a>
             </li>
             <li>
-                <a class="active" href="../LAB02/Red-maquina/index.html">Auto con cantidad</a>
+                <a class="active" href="../LAB02/Red-maquina/index.html">Automática con cantidad</a>
             </li>
         </ul>
-        <div>
-            <label for="conservante">Conservante</label>
-            <input type="text" id="conservante">
-            <label for="esparrago">Espárrago</label>
-            <input type="text" id="esparrago">
-            <label for="frasco">Frasco</label>
-            <input type="text" id="frasco">
-            <div>Productos: <span id="cant-productos"></span></div>
-            <div id="message" class="hiddenMessage">Ya no es posible generar más productos</div>
+        <div class="column">
+            <div class="column-box">
+                <label for="conservante">Conservante</label>
+                <input type="text" id="conservante">
+            </div>
+            <div class="column-box">
+                <label for="esparrago">Espárrago</label>
+                <input type="text" id="esparrago">
+            </div>
+            <div class="column-box">
+                <label for="frasco">Frasco</label>
+                <input type="text" id="frasco">
+            </div>
+            <div class="column-box">
+                    <div>Productos: <span id="cant-productos"></span></div>
+                    <div id="message" class="hiddenMessage"></div>
+            </div>
         </div>
-        <div class="container">
+        <div class="container" id="content-x">
             <div class="main-container">
                 <svg width="600" height="350">
                         <title>Layer 1</title>

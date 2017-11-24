@@ -11,7 +11,7 @@ h1{
 }
 
 .content{
-    display: flex;  
+    display: flex;
 }
 
 ul {
@@ -151,6 +151,38 @@ footer p{
 
 .token-off {
     display: none;
+}
+
+
+/*Column*/
+#content-x{
+    margin-left: 0;
+}
+
+.column{
+    padding-top: 135px;
+    text-align: center;
+}
+
+.column-box{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    margin-left: 0;
+}
+
+.column label{
+    display: none;
+}
+
+.column input{
+    width: 60px;
+    padding-right: 5%;
+}
+
+#cant-productos{
+    display: block;
+    width: 100%;
 }
 
 /* Message para máquina de conservas */
