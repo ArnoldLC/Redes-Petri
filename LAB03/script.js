@@ -14,6 +14,12 @@ const espaldaInput = document.getElementById("espalda");
 const clavosInput = document.getElementById("clavos");
 const martillosInput = document.getElementById("martillo");
 
+const inicio = document.getElementById("init");
+const it1 = document.getElementById("it-1");
+const it2 = document.getElementById("it-2");
+const it3 = document.getElementById("it-3");
+const it4 = document.getElementById("it-4");
+
 var patas, asiento, espalda, clavos, martillos, silla = 0, maquina = 1;
 var almacen = 0;
 var isPosible = true;
@@ -23,9 +29,10 @@ var plazaInput = [];
 var plazaOutput = [];
 
 
-let i = 1;
+let i = 1, k = 1;
 btn.addEventListener("click", () => {
     //console.log(patasInput.value + " " + asientoInput.value + " " + espaldaInput.value);
+    inicio.style.display = "block";
     patas = patasInput.value;
     asiento = asientoInput.value;
     espalda = espaldaInput.value;
@@ -65,6 +72,10 @@ function setToken(i) {
                 marcacionInicial[i] = marcacionInicial[i] - plazaInput[i] + plazaOutput[i];
             }
             console.log(marcacionInicial+"\n");
+            it1.style.display = "block";
+            if (k == 2) {
+                it3.style.display = "block";
+            }
         } else {
             if (i == 2) {
                 token1.setAttribute("class", "token-off");
@@ -82,6 +93,10 @@ function setToken(i) {
                 }
                 console.log(marcacionInicial + "\n");
                 almacen = almacen + 1;
+                it2.style.display = "block";
+                if (k == 2) {
+                    it4.style.display = "block";
+                }
             } else {
                 token1.setAttribute("class", "token-on");
                 token2.setAttribute("class", "token-on");
@@ -107,6 +122,7 @@ function setToken(i) {
                     "\nClavos: " + clavos + 
                     "\nMartillos: " + martillos + "\n");
         // cantProductos.innerHTML = almacen;
+        k++;
     }
     var loop = setTimeout(setToken, 2000, i);
 }

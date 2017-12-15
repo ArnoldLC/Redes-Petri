@@ -21,7 +21,7 @@
                 <a class="active" href="../LAB02/Red-maquina/index.html">Automática con cantidad</a>
             </li>
         </ul>
-        <div class="column">
+        <div class="column column-1">
             <div class="column-box">
                 <label for="patas">Patas</label>
                 <input type="text" id="patas">
@@ -47,7 +47,7 @@
                     <div id="message" class="hiddenMessage"></div>
             </div>
         </div>
-        <div class="container" id="content-x">
+        <div class="container column-2" id="content-x">
             <div class="main-container">
                 <svg width="580" height="400">
                     <ellipse ry="25" rx="25" id="svg_1" cy="55.5" cx="72.5" stroke-width="1.5" stroke="#000" fill="#fff" />
@@ -166,7 +166,68 @@
                 </div>
             </div>
         </div>
-        <div class="column" id="showMatrix"></div>
+        <div class="column column-3" id="showMatrix">
+            <div class="marcacion-inicial" id="init">
+                <h3 class="pes-init">P</h3>
+                <p class="pes-todos">9 <br> 4 <br> 3 <br> 12 <br> 2 <br> 0 <br> 1 <br> 0</p>
+            </div>
+            <div class="it-fabrica">
+                <div class="it-1" id="it-1">
+                    <h3 class="marcacion">M1</h3>
+                    <div class="valores">
+                        <p class="pes">9 <br> 4 <br> 3 <br> 12 <br> 2 <br> 0 <br> 1 <br> 0</p>
+                        <p class="pes"> <br> <br> - <br> <br> <br> <br> <br></p>
+                        <p class="pes">4 <br> 1 <br> 1 <br>  6 <br> 1 <br> 0 <br> 1 <br> 0</p>
+                        <p class="pes"> <br> <br> + <br> <br> <br> <br> <br></p>
+                        <p class="pes">0 <br> 0 <br> 0 <br>  0 <br> 0 <br> 1 <br> 0 <br> 0</p>
+                        <p class="pes"> <br> <br> = <br> <br> <br> <br> <br></p>
+                        <p class="pes">5 <br> 3 <br> 2 <br>  6 <br> 1 <br> 1 <br> 0 <br> 0</p>
+                    </div>
+                    
+                </div>
+                <div class="it-2" id="it-2">
+                    <h3 class="marcacion">M2</h3>
+                    <div class="valores">
+                        <p class="pes">5 <br> 3 <br> 2 <br>  6 <br> 1 <br> 1 <br> 0 <br> 0</p>
+                        <p class="pes"> <br> <br> - <br> <br> <br> <br> <br></p>
+                        <p class="pes">0 <br> 0 <br> 0 <br>  0 <br> 0 <br> 1 <br> 0 <br> 0</p>
+                        <p class="pes"> <br> <br> + <br> <br> <br> <br> <br></p>
+                        <p class="pes">0 <br> 0 <br> 0 <br>  0 <br> 0 <br> 0 <br> 1 <br> 1</p>
+                        <p class="pes"> <br> <br> = <br> <br> <br> <br> <br></p>
+                        <p class="pes">5 <br> 3 <br> 2 <br>  6 <br> 1 <br> 0 <br> 1 <br> 1</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="it-fabrica">
+                <div class="it-3" id="it-3">
+                    <h3 class="marcacion">M3</h3>
+                    <div class="valores">
+                        <p class="pes">5 <br> 3 <br> 2 <br>  6 <br> 1 <br> 0 <br> 1 <br> 1</p>
+                        <p class="pes"> <br> <br> - <br> <br> <br> <br> <br></p>
+                        <p class="pes">4 <br> 1 <br> 1 <br>  6 <br> 1 <br> 0 <br> 1 <br> 0</p>
+                        <p class="pes"> <br> <br> + <br> <br> <br> <br> <br></p>
+                        <p class="pes">0 <br> 0 <br> 0 <br>  0 <br> 0 <br> 1 <br> 0 <br> 0</p>
+                        <p class="pes"> <br> <br> = <br> <br> <br> <br> <br></p>
+                        <p class="pes">1 <br> 2 <br> 1 <br>  0 <br> 0 <br> 1 <br> 0 <br> 1</p>
+                    </div>
+                    
+                </div>
+                <div class="it-4" id="it-4">
+                    <h3 class="marcacion">M4</h3>
+                    <div class="valores">
+                        <p class="pes">1 <br> 2 <br> 1 <br>  0 <br> 0 <br> 1 <br> 0 <br> 1</p>
+                        <p class="pes"> <br> <br> - <br> <br> <br> <br> <br></p>
+                        <p class="pes">0 <br> 0 <br> 0 <br>  0 <br> 0 <br> 1 <br> 0 <br> 0</p>
+                        <p class="pes"> <br> <br> + <br> <br> <br> <br> <br></p>
+                        <p class="pes">0 <br> 0 <br> 0 <br>  0 <br> 0 <br> 0 <br> 1 <br> 1</p>
+                        <p class="pes"> <br> <br> = <br> <br> <br> <br> <br></p>
+                        <p class="pes">1 <br> 2 <br> 1 <br>  0 <br> 0 <br> 2 <br> 1 <br> 2</p>
+                    </div> 
+                </div>
+            </div>
+            
+        </div>
     </div>
     <footer>
         <p>Modelamiento con Redes Petri &copy 2017</p>

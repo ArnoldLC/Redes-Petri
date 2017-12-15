@@ -49,13 +49,14 @@ li a.active:hover ~ .container{
 }
 
 .container{
-    margin: auto auto;
+    margin: 45px 70px;
     border-radius: 10px;
     box-shadow: 0 5px 15px #555; 
     /* border-bottom-left-radius : 10px;
     border-bottom-right-radius : 10px; */
     background-color: rgb(202, 186, 39);
     border: 3px solid black;
+    height: 70%;
 }
 
 .main-container{
@@ -155,19 +156,19 @@ footer p{
 
 
 /*Column*/
-#content-x{
+/* #content-x{
     margin-left: 0;
-}
+} */
 
 .column{
-    padding-top: 135px;
+    padding-top: 70px;
     text-align: center;
 }
 
 .column-box{
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 200px;
+    padding-left: 100px;
     margin-left: 0;
 }
 
@@ -188,5 +189,50 @@ footer p{
 /* Message para máquina de conservas */
 
 .hiddenMessage { 
+    display: none;
+}
+
+.column-1 {
+    width: 10%;
+}
+
+.column-3 {
+    overflow-y: scroll;
+    height: 540px;
+    width: 300px;
+    text-align: initial;
+}
+
+.pes-init {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+}
+
+.pes-todos {
+    margin-left: 100px;
+    padding: 0 10px;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    width: 40px;
+}
+
+.marcacion-inicial {
+    margin-bottom: 10px;
+}
+
+.marcacion, .pes{
+    display: inline-block;
+}
+
+.marcacion {
+    padding-bottom: 10px;
+}
+
+.pes {
+    padding: 0 5px;
+}
+
+.marcacion-inicial, .it-1, .it-2, .it-3, .it-4 {
     display: none;
 }
